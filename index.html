@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom model for self driving car</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Poppins:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="carType ">
+        <button id="ai_button" class="carTypeButton" onclick="setType('AI')">
+            <img class="carTypeIcons"
+                 src="./assets/bot.jpeg" alt="ai driving"> 
+            <p class="text_for_type">watch a car learn to drive by itself</p>
+        </button>
+        <button  id="manual_button" class="carTypeButton" onclick="setType('KEYS')">
+            <img class="carTypeIcons" src="./assets/key.jpeg" alt="manual driving">
+            <p class="text_for_type">drive the car by yourself</p>
+        </button>
+        
+
+        <div class="dummy-box"></div>
+        <div class="guidelines">
+
+        <h3>PASSIVE GUIDELINES!!!</h3>
+            <ul>
+            <li>Click on the tiles above to select the mode</li>
+            <li>In self-learning mode, tailor the neural network according to your preferences by modifying the parameters within the input columns and pressing experiment</li>
+            <li>On manual mode, press the arrow keys to navigate through the traffic</li>
+            <li>Press the "change" button to generate a fresh backdrop with altered settings</li>
+            <li>And yes, the NPCs (Non Playable Cars) have unwavering focus and continue on their straight trajectories. Also, they could move over another ,underneath or within, depending on how you decide to see it :)</li>
+            <li>DON'T DRINK AND DRIVE</li>
+            </ul>
+        </div>
+    </div>
+
+        <canvas id="carCanvas" class="middle"></canvas>
+    
+    <div class="right" id="third-div">
+        <h2>MODIFY THE CURRENT CONFIGURATION</h2>
+        <div class="right-top">
+            
+            <label for="trafficCount">Traffic Count:</label>
+            <input type="text" id="trafficCount" name="trafficCount" pattern="[1-9]\d*" placeholder="30"><br>
+
+            <label for="laneCount">Lane Count:</label>
+            <input type="number" id="laneCount" name="laneCount" placeholder="3"><br>
+
+            <button onclick="reconfigure()">
+                <img src="./assets/change.png">
+                <p class="hiddenInitial" >Change the configuration</p>
+            </button>
+        </div>
+
+        <div id="right-middle-div" class="right-middle">
+
+            <form onsubmit="event.preventDefault(); experiment();" class="form_ml">              
+                <div>
+                <label for="sensorCount">Sensor Count:</label>
+                <input id="sensorCount" type="number"  name="sensorCount" placeholder="5" ><br>
+                </div>
+
+                <div>
+                <label for="trainingsetCount">Training Set Count:</label>
+                <input type="text" id="trainingsetCount" name="trainingsetCount" placeholder="1000"><br>
+                </div>
+
+                <div>
+                <label for="numLayers">Hidden Layers for <br>the Neural Network:</label>
+                <input type="number" id="numLayers" name="numLayers" placeholder="3"><br>
+                </div>
+                <div>
+                <label for="layer">Count of Nodes in <br>corresponding layers</label>
+                <input id="layer" type="text" name="layer" placeholder="6,10,10"></input><br>
+                </div>
+                
+                <button type="submit" ><p>EXPERIMENT</p></button>
+            </form>
+        </div>
+          
+    </div>
+    <script src="sensor.js"></script>
+    <script src="network.js"></script>
+    <script src="utils.js"></script>
+    <script src="road.js"></script>
+    <script src="car.js"></script>
+    <script src="controls.js"></script> 
+    <script src="main.js" ></script>
+</body>
+</html> 

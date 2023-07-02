@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body{
+    margin:0;
+    background-image: linear-gradient(rgba(4,9,30,0.7
+    ),rgba(4,9,30,0.7)),url("./assets/back1.webp");
+    background-size:cover;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    overflow:hidden;
+    text-align:center;
+     display:flex;
+     flex:1;
+     flex-direction: row;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+.hiddenInitial{
+    display:none;
+}
+.carType{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+    flex-basis:30%;
+
+
+}
+
+.carTypeButton{
+    display: flex;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    width: 200px; /* Adjust the width and height as needed */
+    height: 100px;
+    margin-bottom: 10px; /* Adjust the spacing between buttons as needed */
+    border: none;
+    background-color: transparent;
+    border-radius:10px;
+    overflow: hidden;
+}
+
+.carTypeButton img{
+    width: 80px;
+    height: 80px;;
+    object-fit: cover;
+    border-radius:10px;
+    margin:0px 0px 0px 6px;
+}
+
+
+button:hover{
+    background-color: rgb(234, 110, 27);
+}
+#carCanvas{
+    background-color:lightgray ;
+}
+
+.text_for_type{
+    margin:5px 5px;
+    font-size:14px;
+    background:transparent;
+    color:white;
+    border:none;
+}
+
+
+label{
+    display:block;
+    margin-top:10;
+    color:white;
+
+}
+
+
+
+.right{
+    display:flex;
+    flex-basis:30%;
+    flex-direction: column;
+    height:100%;
+}
+
+.right-top{
+    display:flex;
+
+    flex:1;
+    flex-direction:row;
+    margin:0px 0px 40px 40px;
+}
+
+.right-top button{
+    background:none;
+    border:none;
+    border-radius:40px;
+    height:55px;
+    width:105px;
+    transition: 0.3s ease, box-shadow 0.3s ease;
+    margin:5px 0px 0px 40px;
+}
+
+
+.right-top img{
+    height:100%;
+    width:100%;
+}
+.right-top button:hover{
+    height:65px;
+
+    z-index: 3;
+}
+.right-top label{
+    border-radius: 10px;
+    padding:auto;
+    margin:10px 0px 10px 40px;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.right-top input{
+    display: box;
+    border-radius:4px;
+    margin:auto;
+    height:25px;
+    width:40px;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size:20px;
+
+}
+
+h2{
+    color:rgb(100, 147, 213);
+    font-size:23px;
+    margin:0px 0px 0px 40px;
+    font-weight:bold;
+
+}
+
+.form_ml{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+
+.form_ml label{
+    width:200px;
+    font-size:12px;
+    font-style: italic;
+    align-items:safe;
+
+}
+.form_ml input{
+    width:100px;
+    height:30px;
+    background-color:rgb(186, 199, 206);
+    font-size: large;
+    text-align: center;
+}
+.form_ml div{
+    display:flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: center;
+
+}
+
+.form_ml button{
+    height:40px;
+    width:130px;
+    margin:0 0 0 40px;
+    background-color:blueviolet;
+    color:aqua;
+    font-size:16px;
+    border-radius: 10px;
+
+}
+.form_ml button:hover{
+    border-width:2px;
+    border-color:white;
+}
+
+.guidelines {
+    font-size:13px;
+    align-items:start;
+    text-align:start;
+
+    color:rgb(213, 239, 186);
+    margin:10px 30px 0px 10px;
+}
+.dummy-box{
+    height:80px;
+    display:none;
+}
+
+h3{
+    font-size:25px;
+    color:rgb(221, 239, 24);
+    margin:20px 0px 10px 0px;
+}
