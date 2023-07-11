@@ -1,4 +1,7 @@
 # Customisable-model-for-self-driving-car
+[Click to view the website](https://customisable-model-for-self-driving-5b3us7t0l-shellyannissa.vercel.app/)
+
+
 Users could tailor deep learning models with architecture of their preference to train a car to self drive using this small scale simulation. There is also the option to drive the car manually .
 
 <img width="1440" alt="Screenshot 2023-07-02 at 11 50 27 PM" src="https://github.com/shellyannissa/Customisable-model-for-self-driving-car/assets/118563935/1601b511-6407-4a8d-b9d9-8263aafc8ee5">
